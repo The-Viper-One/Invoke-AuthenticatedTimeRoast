@@ -19,13 +19,13 @@ Modifications from the original:
 - Added optional wordlist generation of sAMAccountNames (lowercased, no trailing '$').
 
 . USAGE
-Invoke-TimeRoast -DomainController "dc01.security.local"
+Invoke-AuthenticatedTimeRoast -DomainController "dc01.security.local"
 
 . USAGE
-Invoke-TimeRoast -DomainController "dc01.security.local" -OutputFile hashes.log -GenerateWordlist
+Invoke-AuthenticatedTimeRoast -DomainController "dc01.security.local" -OutputFile hashes.log -GenerateWordlist
 
 . USAGE
-Invoke-TimeRoast -DomainController "dc01.security.local" -GenerateWordlist
+Invoke-AuthenticatedTimeRoast -DomainController "dc01.security.local" -GenerateWordlist
 
 . NOTE
 Requires the beta version of hashcat for cracking with -m 31300: https://hashcat.net/beta
@@ -36,7 +36,7 @@ hashcat.exe -m 31300 -a 0 -O Hashes\hash.txt Wordlists\rockyou.txt -r rules\best
 #>
 
 
-Function Invoke-TimeRoast {
+Function Invoke-AuthenticatedTimeRoast {
 
     param(
         [Parameter(Mandatory = $true)]
