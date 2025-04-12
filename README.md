@@ -32,7 +32,7 @@ Invoke-AuthenticatedTimeRoast -DomainController "dc01.security.local" -OutputFil
 hashcat.exe -m 31300 -a 0 -O Hashes\hash.txt Wordlists\rockyou.txt -r rules\best64.rule --username
 ```
 
-## 📎 References
+## References
 
 - Original tool by Secura: [https://github.com/SecuraBV/Timeroast](https://github.com/SecuraBV/Timeroast)
 - Hashcat Beta Download: [https://hashcat.net/beta](https://hashcat.net/beta)
