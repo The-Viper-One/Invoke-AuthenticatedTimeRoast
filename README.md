@@ -36,3 +36,4 @@ hashcat.exe -m 31300 -a 0 -O Hashes\hash.txt Wordlists\rockyou.txt -r rules\best
 
 - Original tool by Secura: [https://github.com/SecuraBV/Timeroast](https://github.com/SecuraBV/Timeroast)
 - Hashcat Beta Download: [https://hashcat.net/beta](https://hashcat.net/beta)
+- Furhter information: https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/timeroasting
