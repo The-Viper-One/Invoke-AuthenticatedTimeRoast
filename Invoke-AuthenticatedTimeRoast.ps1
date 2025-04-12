@@ -1,6 +1,6 @@
 <#
 
-Altered version of the TimeRoast PowerShell script originally published by Secura:
+Slightly altered version of the TimeRoast PowerShell script originally published by Secura:
 https://github.com/SecuraBV/Timeroast
 
 This script performs SNTP-based time roasting against a Domain Controller (DC),
